@@ -1,0 +1,134 @@
+# ignore everything in the root except the "app/public/wp-content" directory and the outher no-wordpress folders.
+/*
+!app
+app/*
+!app/public/
+app/public/*
+!app/public/wp-content/
+
+# ignore everything in the "wp-content" directory, except:
+# mu-plugins, plugins, and themes directories
+app/public/wp-content/*
+!app/public/wp-content/mu-plugins/
+!app/public/wp-content/plugins/
+!app/public/wp-content/themes/
+
+# ignore all mu-plugins, plugins, and themes
+# unless explicitly whitelisted at the end of this file
+app/public/wp-content/mu-plugins/*
+app/public/wp-content/plugins/*
+app/public/wp-content/themes/*
+
+
+# ignore all files starting with . or ~
+.*
+~*
+
+# ignore node dependency directories
+node_modules/
+dist/
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+.Trashes
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ignore files that a local computer might use for its own convenience
+.DS_Store
+*.swp
+*.pyc
+
+
+
+# local build tools
+.vagrant
+.idea
+*.sassc
+*.scssc
+*.codekit
+*.sh
+*.orig
+
+# Ignore potentially dangerous files (dependabot alerts)
+yarn.lock 
+package-lock.json
+
+# -------------------------
+# BEGIN Whitelisted Files
+# -------------------------
+
+# track these files, if they exist
+!.gitignore
+!.editorconfig
+!.phpcs.xml.dist
+!README.md
+!CHANGELOG.md
+!composer.json
+# Migration file
+!*.sql.gz
+
+# track favicon files, if they exist
+!android-chrome-*.png
+!apple-touch-icon*.png
+!browserconfig.xml
+!favicon*.png
+!favicon*.ico
+!manifest.json
+!mstile-*.png
+!safari-pinned-tab.svg
+!site.webmanifest
+
+
+# track these mu-plugins, plugins, and themes
+#!wp-content/mu-plugins/wp-migrate-db-pro-compatibility.php
+
+#!wp-content/plugins/advanced-custom-fields-pro
+#!wp-content/plugins/wp-migrate-db-pro
+#!wp-content/plugins/wp-migrate-db-pro-media-files
+
+
+!app/public/wp-content/themes/instant-understrap-child/
+
+# Ignore dist folder of theme
+app/public/wp-content/themes/instant-understrap-child/.gitignore
+app/public/wp-content/themes/instant-understrap-child/.sass-cache
+app/public/wp-content/themes/instant-understrap-child/bower_components
+app/public/wp-content/themes/instant-understrap-child/node_modules
+app/public/wp-content/themes/instant-understrap-child/*.zip
+app/public/wp-content/themes/instant-understrap-child/dist
+app/public/wp-content/themes/instant-understrap-child/dist-product
+app/public/wp-content/themes/instant-understrap-child/npm-debug.log
+app/public/wp-content/themes/instant-understrap-child/vendor/
+
+
+# Ignore potentially dangerous files (dependabot alerts)
+app/public/wp-content/themes/instant-understrap-child/yarn.lock 
+
