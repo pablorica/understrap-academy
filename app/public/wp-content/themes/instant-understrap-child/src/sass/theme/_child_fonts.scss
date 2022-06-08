@@ -1,0 +1,40 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+@font-face {
+    font-family: "KingsCaslonDisplay_Trial";
+    src: url("../fonts/KingsCaslonDisplay_Trial_Rg/KingsCaslonDisplay_Trial_Rg.eot");
+    src: url("../fonts/KingsCaslonDisplay_Trial_Rg/KingsCaslonDisplay_Trial_Rg.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/KingsCaslonDisplay_Trial_Rg/KingsCaslonDisplay_Trial_Rg.woff2") format("woff2"),
+        url("../fonts/KingsCaslonDisplay_Trial_Rg/KingsCaslonDisplay_Trial_Rg.woff") format("woff"),
+        url("../fonts/KingsCaslonDisplay_Trial_Rg/KingsCaslonDisplay_Trial_Rg.ttf") format("truetype"),
+        url("../fonts/KingsCaslonDisplay_Trial_Rg/KingsCaslonDisplay_Trial_Rg.svg") format("svg");
+}
+@font-face {
+    font-family: "KingsCaslonDisplay_Trial";
+    src: url("../fonts/KingsCaslonDisplay_Trial_It/KingsCaslonDisplay_Trial_It.eot");
+    src: url("../fonts/KingsCaslonDisplay_Trial_It/KingsCaslonDisplay_Trial_It.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/KingsCaslonDisplay_Trial_It/KingsCaslonDisplay_Trial_It.woff2") format("woff2"),
+        url("../fonts/KingsCaslonDisplay_Trial_It/KingsCaslonDisplay_Trial_It.woff") format("woff"),
+        url("../fonts/KingsCaslonDisplay_Trial_It/KingsCaslonDisplay_Trial_It.ttf") format("truetype"),
+        url("../fonts/KingsCaslonDisplay_Trial_It/KingsCaslonDisplay_Trial_It.svg") format("svg");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "UniversNextPro";
+    src: url("../fonts/UniversNextPro-Light/UniversNextPro-Light.eot");
+    src: url("../fonts/UniversNextPro-Light/UniversNextPro-Light.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/UniversNextPro-Light/UniversNextPro-Light.woff2") format("woff2"),
+        url("../fonts/UniversNextPro-Light/UniversNextPro-Light.woff") format("woff"),
+        url("../fonts/UniversNextPro-Light/UniversNextPro-Light.ttf") format("truetype"),
+        url("../fonts/UniversNextPro-Light/UniversNextPro-Light.svg") format("svg");
+}
+@font-face {
+    font-family: "UniversNextPro";
+    src: url("../fonts/UniversNextPro-Regular/UniversNextPro-Regular.eot");
+    src: url("../fonts/UniversNextPro-Regular/UniversNextPro-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/UniversNextPro-Regular/UniversNextPro-Regular.woff2") format("woff2"),
+        url("../fonts/UniversNextPro-Regular/UniversNextPro-Regular.woff") format("woff"),
+        url("../fonts/UniversNextPro-Regular/UniversNextPro-Regular.ttf") format("truetype"),
+        url("../fonts/UniversNextPro-Regular/UniversNextPro-Regular.svg") format("svg");
+    font-weight: bold;
+}
