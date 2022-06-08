@@ -41,6 +41,30 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- wrapper end -->
 
+<nav class="navbar navbar-expand-lg bg-secondary" style="--bs-bg-opacity: .5;">
+        <div class="container">
+            <?php
+            wp_nav_menu(
+                array(
+                    'theme_location'  => 'primary',
+                    'container_class' => 'offcanvas-body',
+                    'container_id'    => '',
+                    'menu_class'      => 'navbar-nav justify-content-end flex-grow-1 pe-3',
+                    'fallback_cb'     => '',
+                    'menu_id'         => 'main-menu',
+                    'depth'           => 2,
+                    'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+                )
+            );
+            ?>
+            <form class="d-flex" role="search">
+                <input class="form-control-sm me-sm-2 wp-block-search__input" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary bt-sm" type="submit">Search</button>
+            </form>
+
+        </div>
+    </nav>
+
 </div><!-- #page we need this extra closing tag here -->
 
 <?php wp_footer(); ?>

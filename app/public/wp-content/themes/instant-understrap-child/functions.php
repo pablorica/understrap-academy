@@ -123,3 +123,15 @@ add_action(
     'customize_controls_enqueue_scripts', 
     'Understrap_Child_Customize_Controls_js'
 );
+
+
+
+// Array of files to include.
+$child_includes = array(
+	'/child-custom-post-types.php',        
+);
+
+// Include files.
+foreach ( $child_includes  as $file ) {
+	require_once get_theme_file_path( 'inc' . $file );
+}
