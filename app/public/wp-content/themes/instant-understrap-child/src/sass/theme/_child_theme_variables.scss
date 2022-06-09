@@ -2,19 +2,18 @@
 // To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
 // Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
 
-
 //Fonts (include in theme using Bootstrap variables)
-$font-family-base: UniversNextPro, sans-serif;   
-$headings-font-family: KingsCaslonDisplay_Trial, sans-serif;   
+$font-family-base: UniversNextPro, sans-serif;
+$headings-font-family: KingsCaslonDisplay_Trial, sans-serif;
 
 //Colors
-$gray-600: #2D3841; 
-$brown:    #696158;
-$cyan:     #B2CDD8;
-$orange:   #FF7A00;
+$gray-600: #2d3841;
+$brown: #696158;
+$cyan: #b2cdd8;
+$orange: #ff7a00;
 
 //Bootstrap variables
-$primary: $gray-600;  
+$primary: $gray-600;
 $secondary: $brown;
 
 $border-radius: 0;
@@ -23,37 +22,35 @@ $border-radius-lg: 0;
 $link-decoration: none;
 $link-color: $secondary;
 
-
-
 // Ascending
 // Used to evaluate Sass maps like our grid breakpoints.
 @mixin _assert-ascending($map, $map-name) {
     $prev-key: null;
     $prev-num: null;
     @each $key, $num in $map {
-      @if $prev-num == null or unit($num) == "%" or unit($prev-num) == "%" {
-        // Do nothing
-      } @else if not comparable($prev-num, $num) {
-        @warn "Potentially invalid value for #{$map-name}: This map must be in ascending order, but key '#{$key}' has value #{$num} whose unit makes it incomparable to #{$prev-num}, the value of the previous key '#{$prev-key}' !";
-      } @else if $prev-num >= $num {
-        @warn "Invalid value for #{$map-name}: This map must be in ascending order, but key '#{$key}' has value #{$num} which isn't greater than #{$prev-num}, the value of the previous key '#{$prev-key}' !";
-      }
-      $prev-key: $key;
-      $prev-num: $num;
+        @if $prev-num == null or unit($num) == "%" or unit($prev-num) == "%" {
+            // Do nothing
+        } @else if not comparable($prev-num, $num) {
+            @warn "Potentially invalid value for #{$map-name}: This map must be in ascending order, but key '#{$key}' has value #{$num} whose unit makes it incomparable to #{$prev-num}, the value of the previous key '#{$prev-key}' !";
+        } @else if $prev-num >= $num {
+            @warn "Invalid value for #{$map-name}: This map must be in ascending order, but key '#{$key}' has value #{$num} which isn't greater than #{$prev-num}, the value of the previous key '#{$prev-key}' !";
+        }
+        $prev-key: $key;
+        $prev-num: $num;
     }
-  }
-  
-  // Starts at zero
-  // Used to ensure the min-width of the lowest breakpoint starts at 0.
-  @mixin _assert-starts-at-zero($map, $map-name: "$grid-breakpoints") {
+}
+
+// Starts at zero
+// Used to ensure the min-width of the lowest breakpoint starts at 0.
+@mixin _assert-starts-at-zero($map, $map-name: "$grid-breakpoints") {
     @if length($map) > 0 {
-      $values: map-values($map);
-      $first-value: nth($values, 1);
-      @if $first-value != 0 {
-        @warn "First breakpoint in #{$map-name} must start at 0, but starts at #{$first-value}.";
-      }
+        $values: map-values($map);
+        $first-value: nth($values, 1);
+        @if $first-value != 0 {
+            @warn "First breakpoint in #{$map-name} must start at 0, but starts at #{$first-value}.";
+        }
     }
-  }
+}
 
 // Grid breakpoints
 //
@@ -62,19 +59,17 @@ $link-color: $secondary;
 
 // scss-docs-start grid-breakpoints
 $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
 ) !default;
 // scss-docs-end grid-breakpoints
 
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
 @include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
-
-
 
 // Grid containers
 //
@@ -82,11 +77,11 @@ $grid-breakpoints: (
 
 // scss-docs-start container-max-widths
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1320px
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px,
 ) !default;
 // scss-docs-end container-max-widths
 

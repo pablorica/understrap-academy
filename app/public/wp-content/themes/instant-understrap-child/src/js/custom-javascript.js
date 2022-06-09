@@ -48,7 +48,7 @@ const controller = new ScrollMagic.Controller();
 		},
        
         onreadyFunctions: function() {
-            //CDG.addMSGonReady();
+            CDG.addMSGonReady();
 
             // if($('body.home').length > 0 ) {
             //     setTimeout(() => {
