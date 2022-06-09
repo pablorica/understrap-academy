@@ -14,5 +14,16 @@ body.archive{
                 display: inline-block;
             }
         }
+
+        //Scroll magic
+        &.card {
+            opacity: 0;
+            transform:translateY(40px);
+            transition: all ease 1s;
+            &.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     }
 }

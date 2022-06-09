@@ -61,6 +61,14 @@ function Theme_Enqueue_styles()
         $the_theme->get('Version'), 
         true
     );
+    wp_enqueue_script(
+        'scroll-magic', 
+        get_stylesheet_directory_uri() . '/js/ScrollMagic.min.js', 
+        array(), 
+        '', 
+        false
+    );
+
     if (is_singular() 
         && comments_open() 
         && get_option('thread_comments')

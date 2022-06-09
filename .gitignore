@@ -27,6 +27,7 @@ app/public/wp-content/themes/*
 # ignore node dependency directories
 node_modules/
 dist/
+dist-product/
 
 # ignore OS generated files
 ehthumbs.db
@@ -76,6 +77,7 @@ Thumbs.db
 *.codekit
 *.sh
 *.orig
+*.sass-cache
 
 # Ignore potentially dangerous files (dependabot alerts)
 yarn.lock 
@@ -125,9 +127,12 @@ app/public/wp-content/themes/instant-understrap-child/node_modules
 app/public/wp-content/themes/instant-understrap-child/*.zip
 app/public/wp-content/themes/instant-understrap-child/dist
 app/public/wp-content/themes/instant-understrap-child/dist-product
-app/public/wp-content/themes/instant-understrap-child/npm-debug.log
 app/public/wp-content/themes/instant-understrap-child/vendor/
 
+# Ignore compiled files
+app/public/wp-content/themes/instant-understrap-child/js/child-theme.*
+app/public/wp-content/themes/instant-understrap-child/css/child-theme.*
+app/public/wp-content/themes/instant-understrap-child/css/custom-editor-style.*
 
 # Ignore potentially dangerous files (dependabot alerts)
 app/public/wp-content/themes/instant-understrap-child/yarn.lock 

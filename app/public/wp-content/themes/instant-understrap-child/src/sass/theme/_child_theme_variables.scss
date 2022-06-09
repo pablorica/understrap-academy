@@ -23,5 +23,71 @@ $border-radius-lg: 0;
 $link-decoration: none;
 $link-color: $secondary;
 
-//$logo-img: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 662.38 210.93'><defs><style>.cls-1{fill:'#{$secondary}'}</style></defs><path class='cls-1' d='M211.82,142.25q-5.1-5.53-5.1-15.86V61.48h13.37v65.88c0,2.92.58,5,1.76,6.32a7.5,7.5,0,0,0,10.09,0q1.76-1.94,1.76-6.32V61.48h12.88v64.91q0,10.33-5.1,15.86t-14.83,5.53Q216.93,147.78,211.82,142.25Z'/><path class='cls-1' d='M253,61.48H269.8l13,50.93h.24V61.48H295v85.09H281.23L265.18,84.45h-.24v62.12H253Z'/><path class='cls-1' d='M301.89,61.48h20.42q10,0,14.95,5.35t5,15.68v43q0,10.33-5,15.68t-14.95,5.35H301.89Zm20.18,72.93a6.46,6.46,0,0,0,5-1.94c1.18-1.3,1.76-3.41,1.76-6.33V81.9c0-2.92-.58-5-1.76-6.32a6.43,6.43,0,0,0-5-2h-6.81v60.78Z'/><path class='cls-1' d='M348.2,61.48h36.47V73.63h-23.1V96.12h18.36v12.16H361.57v26.13h23.1v12.16H348.2Z'/><path class='cls-1' d='M389.28,61.48H409.1q10.32,0,15.07,4.8t4.74,14.77v5.23q0,13.25-8.75,16.77v.24a10.47,10.47,0,0,1,6.87,6q2,4.5,2,12v14.95a54.84,54.84,0,0,0,.25,5.9,14.69,14.69,0,0,0,1.21,4.44H416.88a20,20,0,0,1-1-3.89,59.46,59.46,0,0,1-.24-6.57V120.55q0-5.83-1.88-8.14t-6.51-2.31h-4.62v36.47H389.28Zm18.24,36.46c2.67,0,4.68-.68,6-2.06s2-3.69,2-6.93V82.39q0-4.62-1.64-6.69t-5.17-2.07h-6.08V97.94Z'/><path class='cls-1' d='M437.91,142.25q-5-5.53-5-15.86v-4.86h12.64v5.83q0,8.27,6.93,8.27a6.52,6.52,0,0,0,5.17-2c1.17-1.34,1.76-3.5,1.76-6.5A18,18,0,0,0,457,117.7q-2.43-4.08-9-9.79-8.26-7.29-11.54-13.19a26.85,26.85,0,0,1-3.28-13.31q0-10.08,5.1-15.62t14.83-5.53q9.6,0,14.53,5.53t4.92,15.87v3.52H459.91V80.81q0-4.38-1.71-6.39a6.17,6.17,0,0,0-5-2q-6.69,0-6.68,8.14A16.06,16.06,0,0,0,449,89.19q2.49,4,9.05,9.73,8.39,7.29,11.55,13.25a29.36,29.36,0,0,1,3.16,14q0,10.47-5.16,16t-15,5.59Q442.89,147.78,437.91,142.25Z'/><path class='cls-1' d='M487.86,73.63h-14V61.48h41.33V73.63h-14v72.94H487.86Z'/><path class='cls-1' d='M518.62,61.48h19.81q10.34,0,15.07,4.8t4.74,14.77v5.23q0,13.25-8.75,16.77v.24a10.47,10.47,0,0,1,6.87,6q2,4.5,2,12v14.95a54.84,54.84,0,0,0,.25,5.9,14.69,14.69,0,0,0,1.21,4.44H546.21a19.21,19.21,0,0,1-1-3.89,56.32,56.32,0,0,1-.25-6.57V120.55q0-5.83-1.88-8.14t-6.5-2.31H532v36.47H518.62Zm18.23,36.46c2.67,0,4.68-.68,6-2.06s2-3.69,2-6.93V82.39c0-3.08-.54-5.31-1.64-6.69s-2.82-2.07-5.16-2.07H532V97.94Z'/><path class='cls-1' d='M574.9,61.48H593l13.85,85.09H593.49l-2.43-16.9v.24H575.87l-2.43,16.66H561Zm14.58,56.89-6-42.06h-.25l-5.83,42.06Z'/><path class='cls-1' d='M610.27,61.48H630q10,0,14.95,5.35t5,15.68v8.38q0,10.33-5,15.68T630,111.92h-6.32v34.65H610.27ZM630,99.77a6.26,6.26,0,0,0,4.92-1.83c1.1-1.21,1.64-3.28,1.64-6.19V81.66c0-2.92-.54-5-1.64-6.2A6.26,6.26,0,0,0,630,73.63h-6.32V99.77Z'/><path class='cls-1' d='M179.28,49.62s-82.7-32.25-83.39-32c-5,2-83.4,32.06-83.4,32.06V155.05L96,187.11l83.25-31.93ZM89.92,42.29,75.4,47.88,40.08,61.43,30.83,65c0-.31,0-.67,0-1.16l0-2.78,35.92-13.8c7.45-2.87,23.17-8.89,23.17-8.89ZM72.22,58.08l-1.1.42L40.55,70.24,30.85,74l0-3.94,8.68-3.34L71.86,54.27l.53-.21a1.57,1.57,0,0,0-.21.93C72.23,56,72.22,57.05,72.22,58.08Zm17.69-1.43v4S77,65.51,71.06,67.79L42.65,78.7l0-4L69.91,64.27C76.27,61.83,89.91,56.65,89.91,56.65ZM31.66,106.76l10.85-4.18,15.31-5.87v4l-17.2,6.61-9,3.44Zm10.93-9.51v-4L74.88,80.9l2.79-1.07.06,3.93L74,85.18ZM71.12,77,42.64,88l0-3.93c16.54-6.35,47.32-18.1,47.32-18.1v3.91ZM20.44,55.46l19.1-7.33L72.31,35.56v4L37.74,52.79c-5.59,2.14-17.35,6.7-17.35,6.7Zm-.05,74.1s11.05-4.2,16.21-6.18l11.88-4.56v4l-7.86,3c-6.5,2.49-20.23,7.79-20.23,7.79Zm53.46-6.66L40.54,135.68c-6.43,2.47-20.15,7.8-20.15,7.8l0-4,69.5-26.85,0,4.28S78.8,121,73.85,122.9Zm16-25.23S75.77,103,69.3,105.51L31.66,120V116l3.77-1.46C53.21,107.75,90,93.7,90,93.7Zm77.63,36.19c-4.77,4.56-12.7,5-26.75.62-17.86-6.25-25.46-14.15-30.63-22.5a50.76,50.76,0,0,1-7.48-27.74V28.13L129,38l.21,45.63a152,152,0,0,0,.43,16.22c1.08,7.2,2.88,12.6,10,14.67,5.34,1.95,7.8-2,8-8.79,0-6.84-.16-14.35-.16-14.35l-.3-47.6,26.48,10.75v58.94S174.07,127.59,167.51,133.86Z'/></svg>");
 
+
+// Ascending
+// Used to evaluate Sass maps like our grid breakpoints.
+@mixin _assert-ascending($map, $map-name) {
+    $prev-key: null;
+    $prev-num: null;
+    @each $key, $num in $map {
+      @if $prev-num == null or unit($num) == "%" or unit($prev-num) == "%" {
+        // Do nothing
+      } @else if not comparable($prev-num, $num) {
+        @warn "Potentially invalid value for #{$map-name}: This map must be in ascending order, but key '#{$key}' has value #{$num} whose unit makes it incomparable to #{$prev-num}, the value of the previous key '#{$prev-key}' !";
+      } @else if $prev-num >= $num {
+        @warn "Invalid value for #{$map-name}: This map must be in ascending order, but key '#{$key}' has value #{$num} which isn't greater than #{$prev-num}, the value of the previous key '#{$prev-key}' !";
+      }
+      $prev-key: $key;
+      $prev-num: $num;
+    }
+  }
+  
+  // Starts at zero
+  // Used to ensure the min-width of the lowest breakpoint starts at 0.
+  @mixin _assert-starts-at-zero($map, $map-name: "$grid-breakpoints") {
+    @if length($map) > 0 {
+      $values: map-values($map);
+      $first-value: nth($values, 1);
+      @if $first-value != 0 {
+        @warn "First breakpoint in #{$map-name} must start at 0, but starts at #{$first-value}.";
+      }
+    }
+  }
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+// scss-docs-end grid-breakpoints
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+) !default;
+// scss-docs-end container-max-widths
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
